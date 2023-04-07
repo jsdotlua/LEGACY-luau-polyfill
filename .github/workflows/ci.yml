@@ -32,7 +32,7 @@ jobs:
       - name: Analyze
         shell: bash
         working-directory: ${{ github.workspace }}
-        run: luau-analyze --project=default.project.json --definitions=globalTypes.d.lua --base-luaurc=.luaurc --sourcemap sourcemap.json packages/
+        run: luau-lsp analyze --project=default.project.json --definitions=globalTypes.d.lua --base-luaurc=.luaurc --sourcemap sourcemap.json packages/
 
   lint:
     name: Lint
