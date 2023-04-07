@@ -24,7 +24,6 @@ jobs:
         shell: bash
         run: rojo sourcemap -o sourcemap.json
 
-      # TODO: Where can we get the latest globalTypes? This repo is deprecated.
       - name: Download global Roblox types
         shell: bash
         run: curl -O https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/main/scripts/globalTypes.d.lua
