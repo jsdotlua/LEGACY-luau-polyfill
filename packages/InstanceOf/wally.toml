@@ -1,6 +1,6 @@
 [package]
 name = 'core-packages/instance-of'
-description = 'https://github.com/js-for-lua/luau-polyfill'
+description = 'https://github.com/jsdotlua/luau-polyfill'
 version = '1.2.3'
 license = 'MIT'
 authors = ['Roblox Corporation']
