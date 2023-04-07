@@ -1,4 +1,4 @@
-Copyright (c) 2023 JS for Lua
+Copyright (c) 2023 JS.Lua
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
