@@ -26,11 +26,11 @@ jobs:
       # TODO: Where can we get the latest globalTypes? This repo is deprecated.
       - name: Download global Roblox types
         shell: bash
-        run: curl -O https://raw.githubusercontent.com/JohnnyMorganz/luau-analyze-rojo/master/globalTypes.d.lua
+        run: curl -O https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/main/scripts/globalTypes.d.lua
 
       - name: Analyze
         shell: bash
-        run: luau-lsp analyze --definitions=globalTypes.d.lua --base-luaurc=.luaurc --sourcemap sourcemap.json packages/
+        run: luau-lsp analyze --definitions=globalTypes.d.lua --base-luaurc=.luaurc --sourcemap=sourcemap.json packages/
 
   lint:
     name: Lint
