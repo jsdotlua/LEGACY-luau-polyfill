@@ -1,6 +1,6 @@
 [package]
 name = 'core-packages/symbol'
-description = 'https://github.com/grilme99/CorePackages'
+description = 'https://github.com/js-for-lua/luau-polyfill'
 version = '1.0.0'
 license = 'MIT'
 authors = ['Roblox Corporation']

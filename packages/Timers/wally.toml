@@ -1,6 +1,6 @@
 [package]
 name = 'core-packages/timers'
-description = 'https://github.com/grilme99/CorePackages'
+description = 'https://github.com/js-for-lua/luau-polyfill'
 version = '1.2.3'
 license = 'MIT'
 authors = ['Roblox Corporation']

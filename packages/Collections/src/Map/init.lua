@@ -1,4 +1,3 @@
--- NOTE: This file is too small and/or simple to be sufficiently rewritten under a new license. Assume MIT.
 local Packages = script.Parent.Parent
 
 local ES7Types = require(Packages.ES7Types)
