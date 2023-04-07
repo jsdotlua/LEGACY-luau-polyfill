@@ -1,0 +1,12 @@
+[package]
+name = 'core-packages/string'
+description = 'https://github.com/jsdotlua/luau-polyfill'
+version = '1.2.3'
+license = 'MIT'
+authors = ['Roblox Corporation']
+registry = 'https://github.com/UpliftGames/wally-index'
+realm = 'shared'
+
+[dependencies]
+ES7Types = 'core-packages/es7-types@1.2.3'
+Number = 'core-packages/number@1.2.3'
