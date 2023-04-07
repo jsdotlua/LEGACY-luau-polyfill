@@ -31,7 +31,7 @@ return function<T>(array: Array<T>, start: number, deleteCount: number?, ...: T)
 		if deleteCount_ > 0 then
 			local lastIndex = math.min(length, start + math.max(0, deleteCount_ - 1))
 
-			for i = start, lastIndex do
+			for _ = start, lastIndex do
 				local deleted = table.remove(array, start) :: T
 				table.insert(deletedItems, deleted)
 			end

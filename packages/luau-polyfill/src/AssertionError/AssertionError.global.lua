@@ -45,7 +45,7 @@ local process = {
 	stderr = {
 		isTTY = false,
 		columns = 0,
-		hasColors = function(...)
+		hasColors = function(_)
 			return true
 		end,
 	},

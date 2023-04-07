@@ -27,6 +27,8 @@ local function concat<T, S>(source: Array<T> | T, ...: Array<S> | S): Array<T> &
 	for i = 1, select("#", ...) do
 		local value = select(i, ...)
 		local valueType = typeof(value)
+
+		-- selene:allow(empty_if)
 		if value == nil then
 			-- do not insert nil
 		elseif valueType == "table" then

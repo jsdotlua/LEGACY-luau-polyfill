@@ -13,7 +13,7 @@ local function preventExtensions<T>(t: T & (Object | Array<any>)): T
 
 	return (
 		setmetatable(t :: any, {
-			__newindex = function(self, key, value)
+			__newindex = function(_self, key, _value)
 				local message = ("%q (%s) is not a valid member of %s"):format(tostring(key), typeof(key), name)
 
 				error(message, 2)

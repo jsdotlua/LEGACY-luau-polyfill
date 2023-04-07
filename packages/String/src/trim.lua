@@ -1,4 +1,3 @@
-
 local trimStart = require(script.Parent.trimStart)
 local trimEnd = require(script.Parent.trimEnd)
 
