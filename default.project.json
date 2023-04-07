@@ -3,37 +3,37 @@
     "tree": {
         "$className": "Folder",
         "Boolean": {
-            "$path": "packages/Boolean/default.project.json"
+            "$path": "packages/boolean/default.project.json"
         },
         "Collections": {
-            "$path": "packages/Collections/default.project.json"
+            "$path": "packages/collections/default.project.json"
         },
         "Console": {
-            "$path": "packages/Console/default.project.json"
+            "$path": "packages/console/default.project.json"
         },
         "ES7Types": {
-            "$path": "packages/ES7Types/default.project.json"
+            "$path": "packages/es7-types/default.project.json"
         },
         "InstanceOf": {
-            "$path": "packages/InstanceOf/default.project.json"
+            "$path": "packages/instance-of/default.project.json"
         },
         "LuauPolyfill": {
-            "$path": "packages/LuauPolyfill/default.project.json"
+            "$path": "packages/luau-polyfill/default.project.json"
         },
         "Math": {
-            "$path": "packages/Math/default.project.json"
+            "$path": "packages/math/default.project.json"
         },
         "Number": {
-            "$path": "packages/Number/default.project.json"
+            "$path": "packages/number/default.project.json"
         },
         "String": {
-            "$path": "packages/String/default.project.json"
+            "$path": "packages/string/default.project.json"
         },
         "Symbol": {
-            "$path": "packages/Symbol/default.project.json"
+            "$path": "packages/symbol/default.project.json"
         },
         "Timers": {
-            "$path": "packages/Timers/default.project.json"
+            "$path": "packages/timers/default.project.json"
         }
     }
 }
