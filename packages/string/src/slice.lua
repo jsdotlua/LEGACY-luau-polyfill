@@ -26,9 +26,10 @@ local function slice(str: string, startIndexStr: string | number, lastIndexStr: 
 		lastIndex = strLen + 1
 	end
 
-	local startIndexByte = utf8.offset(str, startIndex)
-	-- get char length of charset retunred at offset
-	local lastIndexByte = utf8.offset(str, lastIndex) - 1
+	local startIndexByte = assert(utf8.offset(str, startIndex), "startIndexByte should be a number")
+
+	-- get char length of charset returned at offset
+	local lastIndexByte = assert(utf8.offset(str, lastIndex), "lastIndexByte should be a number") - 1
 
 	return string.sub(str, startIndexByte, lastIndexByte)
 end
