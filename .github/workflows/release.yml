@@ -23,7 +23,7 @@ jobs:
 
       - name: Get latest release
         id: latest-release
-        uses: actions-ecosystem/action-get-latest-release@v1
+        uses: pozetroninc/github-action-get-latest-release@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true # This will error if no tags have been made yet, in which case publish.sh will fallback.
