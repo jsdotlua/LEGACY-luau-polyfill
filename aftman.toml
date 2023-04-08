@@ -1,6 +1,6 @@
 [tools]
 rojo = "rojo-rbx/rojo@7.2.1"
-wally = "UpliftGames/wally@0.3.1"
+wally = "grilme99/wally@0.4.0" # Fork of latest Wally with a release
 stylua = "johnnymorganz/stylua@0.14.2"
 selene = "Kampfkarren/selene@0.25.0"
 luau-lsp = "johnnymorganz/luau-lsp@1.18.1"

@@ -1,0 +1,56 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*" # The pattern for your version tags, e.g., v1.0.0
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Aftman
+        uses: ok-nick/setup-aftman@v0
+
+      - name: Authenticate Wally
+        run: |
+          cd packages/boolean
+          wally login --token ${{ secrets.WALLY_ACCESS_TOKEN }}
+          cd ../..
+
+      - name: Get latest release
+        id: latest-release
+        uses: actions-ecosystem/action-get-latest-release@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true # This will error if no tags have been made yet, in which case publish.sh will fallback.
+
+      - name: Publish changed packages
+        run: bash ./publish.sh ${{ steps.latest-release.outputs.tag_name }}
+
+      - name: Build project
+        run: rojo build --output LuauPolyfill.rbxm
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: true
+          prerelease: false
+
+      - name: Upload build artifact
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./LuauPolyfill.rbxm
+          asset_name: LuauPolyfill.rbxm
+          asset_content_type: application/octet-stream
