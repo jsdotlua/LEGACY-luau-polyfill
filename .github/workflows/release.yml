@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - "v*" # The pattern for your version tags, e.g., v1.0.0
+      - "v*"
 
 jobs:
   release:
