@@ -1,5 +1,5 @@
 [package]
-name = 'core-packages/number'
+name = 'jsdotlua/number'
 description = 'https://github.com/jsdotlua/luau-polyfill'
 version = '1.2.3'
 license = 'MIT'

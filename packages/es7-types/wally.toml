@@ -1,5 +1,5 @@
 [package]
-name = 'core-packages/es7-types'
+name = 'jsdotlua/es7-types'
 description = 'https://github.com/jsdotlua/luau-polyfill'
 version = '1.2.3'
 license = 'MIT'
